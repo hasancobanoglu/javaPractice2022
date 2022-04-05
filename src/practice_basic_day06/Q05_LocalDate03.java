@@ -10,21 +10,21 @@ public class Q05_LocalDate03 {
          What is the output of the following code?
         Asagidaki code'un  ciktisi  nedir?
         */
-    //    LocalDate date = LocalDate.of(2018,Month.FEBRUARY, 29);
-//
-    //    System.out.println(date.getYear() + " " + date.getMonth() + " " + date.getDayOfMonth());
+        LocalDate date = LocalDate.of(2018,Month.FEBRUARY, 29);
 
+        System.out.println(date.getYear() + " " + date.getMonth() + " " + date.getDayOfMonth());
+
+        //Invalid date 'February 29' as '2018' is not a leap year
+        //artık yıl  olmadığından hata verir
             /*
             A. 2018 APRIL 29
             B. 2018 APRIL 30
             C. 2018 MAY 10
             D. Another date.
             E. The code does not compile.
-            F. A runtime exception is thrown. **cevap**
+            F. A runtime exception is thrown.//doğru cevap
             */
-
-        //Invalid date 'February 29' as '2018' is not a leap year bu yuzden exception verir
-        System.out.println(LocalDate.now().isLeapYear()); //artik yil olup olmadigini belirler boolean sonuc dondurur
-                                                            //2022 -> false doner
+      //  System.out.println(LocalDate.now().isLeapYear());
+        //artık yıl olup olmadığını belirler boolean sonuç veri 2022 için false döndü
     }
 }

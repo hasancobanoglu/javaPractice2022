@@ -24,8 +24,14 @@ public class ObjectClass {
         obj2.yas=35;
         obj2.tel="987654321";
 
+        OgretmenBilgileri obj3=new OgretmenBilgileri();
+        obj3.isim = "Hasan";
+        obj3.soyisim="Test";
+        obj3.brans="Kimya";
+
         System.out.println(obj1.isim +" "+obj1.soyisim+", "+obj1.yas +", "+obj1.brans+", "+obj1.tel);
         System.out.println(obj2.isim +" "+obj2.soyisim+", "+obj2.yas +", "+obj2.brans+", "+obj2.tel);
+        System.out.println(obj3.isim +" "+obj3.soyisim+", "+obj3.yas +", "+obj3.brans+", "+obj3.tel);
     }
 
 }

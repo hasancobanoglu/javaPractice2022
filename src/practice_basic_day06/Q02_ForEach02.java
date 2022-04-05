@@ -11,19 +11,19 @@ public class Q02_ForEach02 {
     public static void main(String[] args) {
 
         String[] list = {"fruits", "vegetables", "meat", "milk"};
+
         for (String element:list
              ) {
-            System.out.print(element + " : " + element.length() + " " ); //fruits : 6 vegetables : 10 meat : 4 milk : 4
+            System.out.println(element+" :"+ element.length()+" ");
 
         }
-        System.out.println();
+        System.out.println("***********2.cikısım*******");
+
         for (String item:list
              ) {
-            if(item.startsWith("v")) {
+            if(item.startsWith("v"))
                 break;
-            }
             System.out.println(item);
-
         }
     }
 }
