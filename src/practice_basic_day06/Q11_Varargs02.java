@@ -2,22 +2,19 @@ package practice_basic_day06;
 
 public class Q11_Varargs02 {
     // Create a multiply method with double varargs (return double)
+    public static void main(String[] args) {
 
-    static void display(int num, String... values){
-        System.out.println("Girilen Sayı: "+num);
-
-        for(String s:values){
-            System.out.println(s);
-        }
-    }
-
-    public static void main(String args[]){
-
-        display(500,"Merhaba");//Tek arümant
-        display(1000,"Benim","Adım","Java","Varargs");//Çoklu argüment
+        System.out.println(carpma(1.2,2.3,3.4,4.5,5.6));
     }
 
 
+    public static double carpma(double... numbers) {
+        int carpim = 1;
+        for (int i = 0; i < numbers.length; i++)
+            carpim *= numbers[i];
+
+        return carpim;
+    }
 
 
 }
